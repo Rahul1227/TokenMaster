@@ -56,7 +56,6 @@ function App() {
     <div>
       <header>
         <Navigation account={account} setAccount={setAccount} />
-
         <h2 className="header__title"><strong>Event</strong> Tickets</h2>
       </header>
 
@@ -75,7 +74,6 @@ function App() {
             setOccasion={setOccasion}
             key={index}
           />
-          
         ))}
       </div>
 
@@ -87,6 +85,16 @@ function App() {
           setToggle={setToggle}
         />
       )}
+
+      <footer>
+        © {new Date().getFullYear()} Rahul Yadav
+      </footer>
+
+      <style jsx>{`
+        body {
+          background-color: #c7ecee;
+        }
+      `}</style>
     </div>
   );
 }
